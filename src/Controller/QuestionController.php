@@ -26,6 +26,9 @@ class QuestionController extends AbstractController
           'Answer 3',
         ];
 
+        // dump for profiler (once debug package pack is installed)
+        dump($this);
+
         // render method is part of AbstractController
         // 1st param is the template, 2nd is array of variables we want to pass
         return $this->render('question/show.html.twig', [
