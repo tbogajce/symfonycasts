@@ -44,6 +44,7 @@ class QuestionController extends AbstractController
 
         // dump for profiler (once debug package pack is installed)
         dump($this);
+        dump($markdownParser);
 
         // render method is part of AbstractController
         // 1st param is the template, 2nd is array of variables we want to pass
